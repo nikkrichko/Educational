@@ -1,0 +1,4 @@
+URL=jdbc:mysql://testdbi.cglpikxuecy6.us-west-2.rds.amazonaws.com/yjrrdkDB
+port=3306
+user=yjrrdk
+password=FF0716CD
