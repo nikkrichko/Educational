@@ -1,0 +1,4 @@
+<doc>hello world
+    <element id="777" >hello</element>
+    <element>world</element>
+</doc>
