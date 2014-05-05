@@ -156,37 +156,80 @@ public class MainPage {
         return mainMenuShopDropDown;
     }
 
-
-
     public WebElement getMainMenuShopDropRuukki() {
         mainMenuShopDropRuukki = driver
                 .findElement(By.id("menu-moe-menyu"))
                 .findElement(By.id("menu-item-1452"))
-                .findElement(By.className("sf-with-ul"));
+                .findElement(By.className("sub-menu"))
+                .findElement(By.id("menu-item-1671"))
+                .findElement(By.xpath("//a[contains(text(),'Ruukki')]"));
+        waitInvisibleElementsInShopDropDown(mainMenuShopDropRuukki);
         return mainMenuShopDropRuukki;
     }
 
     public WebElement getMainMenuShopDropArcelor() {
+        mainMenuShopDropArcelor = driver
+                .findElement(By.id("menu-moe-menyu"))
+                .findElement(By.id("menu-item-1452"))
+                .findElement(By.className("sub-menu"))
+                .findElement(By.id("menu-item-1670"))
+                .findElement(By.xpath("//a[contains(text(),'Arcelor')]"));
+        waitInvisibleElementsInShopDropDown(mainMenuShopDropArcelor);
         return mainMenuShopDropArcelor;
     }
 
     public WebElement getMainMenuShopDropUSS() {
+        mainMenuShopDropUSS = driver
+                .findElement(By.id("menu-moe-menyu"))
+                .findElement(By.id("menu-item-1452"))
+                .findElement(By.className("sub-menu"))
+                .findElement(By.id("menu-item-1702"))
+                .findElement(By.xpath("//a[contains(text(),'USS')]"));
+        waitInvisibleElementsInShopDropDown(mainMenuShopDropUSS);
         return mainMenuShopDropUSS;
     }
 
     public WebElement getMainMenuShopDropMIP() {
+        mainMenuShopDropMIP = driver
+                .findElement(By.id("menu-moe-menyu"))
+                .findElement(By.id("menu-item-1452"))
+                .findElement(By.className("sub-menu"))
+                .findElement(By.id("menu-item-1704"))
+                .findElement(By.xpath("//a[contains(text(),'МиП')]"));
+        waitInvisibleElementsInShopDropDown(mainMenuShopDropMIP);
         return mainMenuShopDropMIP;
     }
 
     public WebElement getMainMenuShopDropChina() {
+        mainMenuShopDropChina = driver
+                .findElement(By.id("menu-moe-menyu"))
+                .findElement(By.id("menu-item-1452"))
+                .findElement(By.className("sub-menu"))
+                .findElement(By.id("menu-item-1703"))
+                .findElement(By.xpath("//a[contains(text(),'Китай')]"));
+        waitInvisibleElementsInShopDropDown(mainMenuShopDropChina);
         return mainMenuShopDropChina;
     }
 
     public WebElement getMainMenuAboutCompanyDropDown() {
+        mainMenuAboutCompanyDropDown = driver
+                .findElement(By.id("menu-moe-menyu"))
+                .findElement(By.id("menu-item-1450"))
+                .findElement(By.className("sf-with-ul"));
+        waitInvisibleElementInMainMenu(mainMenuAboutCompanyDropDown);
         return mainMenuAboutCompanyDropDown;
     }
 
     public WebElement getMainMenuOurTeam() {
+        mainMenuOurTeam = driver
+                .findElement(By.id("menu-moe-menyu"))
+                .findElement(By.id("menu-item-1450"))
+                .findElement(By.className("sub-menu"))
+                .findElement(By.id("menu-item-1445"))
+                .findElement(By.xpath("//a[contains(text(),'команда')]"));
+        if (mainMenuOurTeam.isDisplayed() == false){
+            new Actions(driver).moveToElement(getMainMenuAboutCompanyDropDown()).perform();
+        }
         return mainMenuOurTeam;
     }
 
@@ -263,6 +306,8 @@ public class MainPage {
         return iconVkontakte;
     }
 
+
+// helper
     private void waitInvisibleElementsInShopDropDown(WebElement webElement){
         waitInvisibleElementInMainMenu(getMainMenuShopDropDown());
         if (webElement.isDisplayed() == false){

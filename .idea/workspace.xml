@@ -249,11 +249,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MainTest.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="MainTest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/selenium/MainTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="694" max-vertical-offset="1275">
-              <caret line="137" column="38" selection-start-line="137" selection-start-column="38" selection-end-line="137" selection-end-column="38" />
+            <state vertical-scroll-proportion="0.6111111" vertical-offset="676" max-vertical-offset="1190">
+              <caret line="154" column="0" selection-start-line="154" selection-start-column="0" selection-end-line="154" selection-end-column="0" />
               <folding>
                 <element signature="method#testLogin#0;class#MainTest#0" expanded="false" />
                 <element signature="e#1208#1230#0" expanded="false" />
@@ -262,8 +262,12 @@
                 <element signature="method#testSocialIconGooglePlus#0;class#MainTest#0" expanded="false" />
                 <element signature="method#testSearchIconForm#0;class#MainTest#0" expanded="false" />
                 <element signature="method#testSearchElement#0;class#MainTest#0" expanded="false" />
+                <element signature="method#testMainMenuElements#0;class#MainTest#0" expanded="false" />
                 <element signature="method#testShopDropDownMenu#0;class#MainTest#0" expanded="false" />
                 <element signature="method#testGoONMenuShop#0;class#MainTest#0" expanded="false" />
+                <element signature="method#testForAboutCOmpany#0;class#MainTest#0" expanded="false" />
+                <element signature="e#5182#5183#0" expanded="true" />
+                <element signature="e#5211#5212#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -279,11 +283,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainPage.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="MainPage.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/selenium/Identifiner/MainPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5277778" vertical-offset="1593" max-vertical-offset="3026">
-              <caret line="161" column="30" selection-start-line="161" selection-start-column="30" selection-end-line="161" selection-end-column="30" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1984" max-vertical-offset="2414">
+              <caret line="309" column="9" selection-start-line="309" selection-start-column="9" selection-end-line="309" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#getLoginMainPage#0;class#MainPage#0" expanded="false" />
@@ -298,18 +302,14 @@
                 <element signature="method#getMainMenuDropDown#0;class#MainPage#0" expanded="false" />
                 <element signature="method#getMainMenuContacts#0;class#MainPage#0" expanded="false" />
                 <element signature="method#getMainMenuBlog#0;class#MainPage#0" expanded="false" />
-                <element signature="e#5337#5338#0" expanded="true" />
-                <element signature="e#5383#5384#0" expanded="true" />
-                <element signature="e#5433#5434#0" expanded="true" />
-                <element signature="e#5475#5476#0" expanded="true" />
-                <element signature="e#5525#5526#0" expanded="true" />
-                <element signature="e#5567#5568#0" expanded="true" />
-                <element signature="e#5619#5620#0" expanded="true" />
-                <element signature="e#5663#5664#0" expanded="true" />
-                <element signature="e#5722#5723#0" expanded="true" />
-                <element signature="e#5773#5774#0" expanded="true" />
-                <element signature="e#5819#5820#0" expanded="true" />
-                <element signature="e#5857#5858#0" expanded="true" />
+                <element signature="method#getMainMenuShopDropDown#0;class#MainPage#0" expanded="false" />
+                <element signature="method#getMainMenuShopDropRuukki#0;class#MainPage#0" expanded="false" />
+                <element signature="method#getMainMenuShopDropArcelor#0;class#MainPage#0" expanded="false" />
+                <element signature="method#getMainMenuShopDropUSS#0;class#MainPage#0" expanded="false" />
+                <element signature="method#getMainMenuShopDropMIP#0;class#MainPage#0" expanded="false" />
+                <element signature="method#getMainMenuShopDropChina#0;class#MainPage#0" expanded="false" />
+                <element signature="method#getMainMenuAboutCompanyDropDown#0;class#MainPage#0" expanded="false" />
+                <element signature="method#getMainMenuOurTeam#0;class#MainPage#0" expanded="false" />
                 <element signature="method#getIconSearch#0;class#MainPage#0" expanded="false" />
                 <element signature="method#getSearchField#0;class#MainPage#0" expanded="false" />
                 <element signature="method#getSearchSubmit#0;class#MainPage#0" expanded="false" />
@@ -318,7 +318,19 @@
                 <element signature="method#getIconFaceBook#0;class#MainPage#0" expanded="false" />
                 <element signature="method#getIconTwitter#0;class#MainPage#0" expanded="false" />
                 <element signature="method#getIconVkontakte#0;class#MainPage#0" expanded="false" />
+                <element signature="method#waitInvisibleElementsInShopDropDown#0;class#MainPage#0" expanded="false" />
+                <element signature="method#waitInvisibleElementInMainMenu#0;class#MainPage#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/XML/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595">
+              <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -385,8 +397,8 @@
         <option value="$PROJECT_DIR$/src/main/java/XML/testxml.xml" />
         <option value="$PROJECT_DIR$/src/main/java/XML/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/selenium/Identifiner/Functions.java" />
-        <option value="$PROJECT_DIR$/src/main/java/selenium/MainTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/selenium/Identifiner/MainPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/selenium/MainTest.java" />
       </list>
     </option>
   </component>
@@ -548,36 +560,6 @@
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Generics and Interfaces" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="educational" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="selenium" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Identifiner" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane" />
@@ -623,7 +605,7 @@
       <recent name="Agoritms" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MainTest.testGoONMenuShop">
+  <component name="RunManager" selected="JUnit.MainTest">
     <configuration default="false" name="MainTest.testSearchHelloWorld" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="Educational" />
@@ -950,9 +932,9 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.MainTest.testGoONMenuShop" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.MainTest.testSearchElement" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.MainTest" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.MainTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.MainTest.testGoONMenuShop" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.MainTest.testSearchElement" />
         <item index="3" class="java.lang.String" itemvalue="JUnit.MainTest.testSearchHelloWorld" />
         <item index="4" class="java.lang.String" itemvalue="JUnit.MainTest.testSearchValidTextInShop" />
       </list>
@@ -994,7 +976,11 @@
       <created>1399228016390</created>
       <updated>1399228016390</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add test fo moveTo dropdownShopMenu">
+      <created>1399277484125</created>
+      <updated>1399277484125</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -1080,7 +1066,8 @@
     <MESSAGE value="delete error" />
     <MESSAGE value="add some test and some xml examples" />
     <MESSAGE value="add search test" />
-    <option name="LAST_COMMIT_MESSAGE" value="add search test" />
+    <MESSAGE value="add test fo moveTo dropdownShopMenu" />
+    <option name="LAST_COMMIT_MESSAGE" value="add test fo moveTo dropdownShopMenu" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1188,19 +1175,19 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/selenium/Identifiner/MainPage.java</url>
-          <line>274</line>
+          <line>319</line>
           <properties />
           <option name="timeStamp" value="33" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/selenium/Identifiner/MainPage.java</url>
-          <line>275</line>
+          <line>320</line>
           <properties />
           <option name="timeStamp" value="34" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/selenium/Identifiner/MainPage.java</url>
-          <line>276</line>
+          <line>321</line>
           <properties />
           <option name="timeStamp" value="35" />
         </line-breakpoint>
@@ -1537,14 +1524,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/XML/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.09848485" vertical-offset="80" max-vertical-offset="595">
-          <caret line="14" column="65" selection-start-line="14" selection-start-column="65" selection-end-line="14" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/XML/testxml.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.04292929" vertical-offset="0" max-vertical-offset="396">
@@ -1569,28 +1548,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/selenium/MainTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="694" max-vertical-offset="1275">
-          <caret line="137" column="38" selection-start-line="137" selection-start-column="38" selection-end-line="137" selection-end-column="38" />
-          <folding>
-            <element signature="method#testLogin#0;class#MainTest#0" expanded="false" />
-            <element signature="e#1208#1230#0" expanded="false" />
-            <element signature="method#testLogout#0;class#MainTest#0" expanded="false" />
-            <element signature="method#testLoginWithRemember#0;class#MainTest#0" expanded="false" />
-            <element signature="method#testSocialIconGooglePlus#0;class#MainTest#0" expanded="false" />
-            <element signature="method#testSearchIconForm#0;class#MainTest#0" expanded="false" />
-            <element signature="method#testSearchElement#0;class#MainTest#0" expanded="false" />
-            <element signature="method#testShopDropDownMenu#0;class#MainTest#0" expanded="false" />
-            <element signature="method#testGoONMenuShop#0;class#MainTest#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/selenium/Identifiner/MainPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5277778" vertical-offset="1593" max-vertical-offset="3026">
-          <caret line="161" column="30" selection-start-line="161" selection-start-column="30" selection-end-line="161" selection-end-column="30" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1984" max-vertical-offset="2414">
+          <caret line="309" column="9" selection-start-line="309" selection-start-column="9" selection-end-line="309" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#getLoginMainPage#0;class#MainPage#0" expanded="false" />
@@ -1605,18 +1566,14 @@
             <element signature="method#getMainMenuDropDown#0;class#MainPage#0" expanded="false" />
             <element signature="method#getMainMenuContacts#0;class#MainPage#0" expanded="false" />
             <element signature="method#getMainMenuBlog#0;class#MainPage#0" expanded="false" />
-            <element signature="e#5337#5338#0" expanded="true" />
-            <element signature="e#5383#5384#0" expanded="true" />
-            <element signature="e#5433#5434#0" expanded="true" />
-            <element signature="e#5475#5476#0" expanded="true" />
-            <element signature="e#5525#5526#0" expanded="true" />
-            <element signature="e#5567#5568#0" expanded="true" />
-            <element signature="e#5619#5620#0" expanded="true" />
-            <element signature="e#5663#5664#0" expanded="true" />
-            <element signature="e#5722#5723#0" expanded="true" />
-            <element signature="e#5773#5774#0" expanded="true" />
-            <element signature="e#5819#5820#0" expanded="true" />
-            <element signature="e#5857#5858#0" expanded="true" />
+            <element signature="method#getMainMenuShopDropDown#0;class#MainPage#0" expanded="false" />
+            <element signature="method#getMainMenuShopDropRuukki#0;class#MainPage#0" expanded="false" />
+            <element signature="method#getMainMenuShopDropArcelor#0;class#MainPage#0" expanded="false" />
+            <element signature="method#getMainMenuShopDropUSS#0;class#MainPage#0" expanded="false" />
+            <element signature="method#getMainMenuShopDropMIP#0;class#MainPage#0" expanded="false" />
+            <element signature="method#getMainMenuShopDropChina#0;class#MainPage#0" expanded="false" />
+            <element signature="method#getMainMenuAboutCompanyDropDown#0;class#MainPage#0" expanded="false" />
+            <element signature="method#getMainMenuOurTeam#0;class#MainPage#0" expanded="false" />
             <element signature="method#getIconSearch#0;class#MainPage#0" expanded="false" />
             <element signature="method#getSearchField#0;class#MainPage#0" expanded="false" />
             <element signature="method#getSearchSubmit#0;class#MainPage#0" expanded="false" />
@@ -1625,6 +1582,38 @@
             <element signature="method#getIconFaceBook#0;class#MainPage#0" expanded="false" />
             <element signature="method#getIconTwitter#0;class#MainPage#0" expanded="false" />
             <element signature="method#getIconVkontakte#0;class#MainPage#0" expanded="false" />
+            <element signature="method#waitInvisibleElementsInShopDropDown#0;class#MainPage#0" expanded="false" />
+            <element signature="method#waitInvisibleElementInMainMenu#0;class#MainPage#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/XML/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595">
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/selenium/MainTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6111111" vertical-offset="676" max-vertical-offset="1190">
+          <caret line="154" column="0" selection-start-line="154" selection-start-column="0" selection-end-line="154" selection-end-column="0" />
+          <folding>
+            <element signature="method#testLogin#0;class#MainTest#0" expanded="false" />
+            <element signature="e#1208#1230#0" expanded="false" />
+            <element signature="method#testLogout#0;class#MainTest#0" expanded="false" />
+            <element signature="method#testLoginWithRemember#0;class#MainTest#0" expanded="false" />
+            <element signature="method#testSocialIconGooglePlus#0;class#MainTest#0" expanded="false" />
+            <element signature="method#testSearchIconForm#0;class#MainTest#0" expanded="false" />
+            <element signature="method#testSearchElement#0;class#MainTest#0" expanded="false" />
+            <element signature="method#testMainMenuElements#0;class#MainTest#0" expanded="false" />
+            <element signature="method#testShopDropDownMenu#0;class#MainTest#0" expanded="false" />
+            <element signature="method#testGoONMenuShop#0;class#MainTest#0" expanded="false" />
+            <element signature="method#testForAboutCOmpany#0;class#MainTest#0" expanded="false" />
+            <element signature="e#5182#5183#0" expanded="true" />
+            <element signature="e#5211#5212#0" expanded="true" />
           </folding>
         </state>
       </provider>

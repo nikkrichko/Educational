@@ -130,8 +130,9 @@ public static void beforeTest(){
 //        webDriverWait.withTimeout(5, TimeUnit.SECONDS);
 //        driver.manage().timeouts().pageLoadTimeout(5, TimeUnit.SECONDS);
 //        mainPage.getMainMenuDropDown().click();
-
-
+        mainPage.getMainMenuOurTeam().click();
+        mainPage.getMainMenuAboutCompanyDropDown().click();
+//        new WebDriverWait(driver, 30).until(ExpectedConditions.titleIs("Купить металлочерепицу, актуальные цены"));
     }
 
     @Test
@@ -144,6 +145,12 @@ public static void beforeTest(){
     public void testGoONMenuShop(){
         mainPage.getMainMenuShopDropDown().click();
         new WebDriverWait(driver, 30).until(ExpectedConditions.titleIs("Купить металлочерепицу, актуальные цены"));
+    }
+
+    @Test
+    public void testForAboutCOmpany(){
+        mainPage.getMainMenuOurTeam().click();
+        mainPage.getMainMenuAboutCompanyDropDown().click();
     }
 
     @AfterClass
