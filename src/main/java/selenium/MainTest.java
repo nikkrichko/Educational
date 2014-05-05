@@ -7,7 +7,10 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.ElementNotVisibleException;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import selenium.Identifiner.Functions;
 import selenium.Identifiner.MainPage;
 
@@ -23,7 +26,7 @@ public class MainTest {
 
     @BeforeClass
 public static void beforeTest(){
-    driver = new ChromeDriver();
+    driver = new FirefoxDriver();
     baseURL = "http://metallocherepica.biz/";
     mainPage = new MainPage(driver);
     functions = new Functions(driver, mainPage);
@@ -116,6 +119,31 @@ public static void beforeTest(){
             }
             driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         }
+    }
+
+    @Test
+    public void testMainMenuElements(){
+        WebDriverWait webDriverWait = new WebDriverWait(driver, 3);
+
+//        Dimension dimension = new org.openqa.selenium.Dimension(1600, 480);
+//        driver.manage().window().setSize(dimension);
+//        webDriverWait.withTimeout(5, TimeUnit.SECONDS);
+//        driver.manage().timeouts().pageLoadTimeout(5, TimeUnit.SECONDS);
+//        mainPage.getMainMenuDropDown().click();
+
+
+    }
+
+    @Test
+    public void testShopDropDownMenu(){
+        new Actions(driver).moveToElement(mainPage.getMainMenuShopDropDown()).perform();
+        new WebDriverWait(driver, 30).until(ExpectedConditions.visibilityOf(mainPage.getMainMenuShopDropDown()));
+    }
+
+    @Test
+    public void testGoONMenuShop(){
+        mainPage.getMainMenuShopDropDown().click();
+        new WebDriverWait(driver, 30).until(ExpectedConditions.titleIs("Купить металлочерепицу, актуальные цены"));
     }
 
     @AfterClass

@@ -1,9 +1,9 @@
 package selenium.Identifiner;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class MainPage {
     //initial driver
@@ -22,16 +22,24 @@ public class MainPage {
     public WebElement logoLinkMainPageFotter = null;
     public WebElement logoLinkMainPageTop = null;
 
-    //MainMenuElements
+    //Search elements
     public WebElement iconSearch = null;
     public WebElement searchField = null;
     public WebElement removeSearchField = null;
     public WebElement searchSubmit = null;
-//    public WebElement ;
-//    public WebElement ;
-//    public WebElement ;
-//    public WebElement ;
-//    public WebElement ;
+
+    //MainMenuElements
+    public WebElement mainMenuDropDown;
+    public WebElement mainMenuContacts;
+    public WebElement mainMenuBlog;
+    public WebElement mainMenuShopDropDown;
+    public WebElement mainMenuShopDropRuukki;
+    public WebElement mainMenuShopDropArcelor;
+    public WebElement mainMenuShopDropUSS;
+    public WebElement mainMenuShopDropMIP;
+    public WebElement mainMenuShopDropChina;
+    public WebElement mainMenuAboutCompanyDropDown;
+    public WebElement mainMenuOurTeam;
 //    public WebElement ;
 //    public WebElement ;
 
@@ -112,6 +120,75 @@ public class MainPage {
 
 
     //MAINMENU ELEMENTS
+//TO DO
+    public WebElement getMainMenuDropDown() {
+        mainMenuDropDown = driver
+                .findElement(By.className("zn_menu_trigger"))
+                .findElement(By.xpath("//a[contains(text(),'Menu')]"));
+        return mainMenuDropDown;
+    }
+
+    public WebElement getMainMenuContacts() {
+
+        mainMenuContacts = driver
+                .findElement(By.id("menu-moe-menyu"))
+                .findElement(By.id("menu-item-1446"))
+                .findElement(By.xpath("//a[contains(text(),'Контакты')]"));
+        waitInvisibleElementInMainMenu(mainMenuContacts);
+        return mainMenuContacts;
+    }
+
+    public WebElement getMainMenuBlog() {
+        mainMenuBlog = driver
+                .findElement(By.id("menu-moe-menyu"))
+                .findElement(By.id("menu-item-1449"))
+                .findElement(By.xpath("//a[contains(text(),'Блог')]"));
+        waitInvisibleElementInMainMenu(mainMenuBlog);
+        return mainMenuBlog;
+    }
+
+    public WebElement getMainMenuShopDropDown() {
+        mainMenuShopDropDown = driver
+                .findElement(By.id("menu-moe-menyu"))
+                .findElement(By.id("menu-item-1452"))
+                .findElement(By.className("sf-with-ul"));
+        waitInvisibleElementInMainMenu(mainMenuShopDropDown);
+        return mainMenuShopDropDown;
+    }
+
+
+
+    public WebElement getMainMenuShopDropRuukki() {
+        mainMenuShopDropRuukki = driver
+                .findElement(By.id("menu-moe-menyu"))
+                .findElement(By.id("menu-item-1452"))
+                .findElement(By.className("sf-with-ul"));
+        return mainMenuShopDropRuukki;
+    }
+
+    public WebElement getMainMenuShopDropArcelor() {
+        return mainMenuShopDropArcelor;
+    }
+
+    public WebElement getMainMenuShopDropUSS() {
+        return mainMenuShopDropUSS;
+    }
+
+    public WebElement getMainMenuShopDropMIP() {
+        return mainMenuShopDropMIP;
+    }
+
+    public WebElement getMainMenuShopDropChina() {
+        return mainMenuShopDropChina;
+    }
+
+    public WebElement getMainMenuAboutCompanyDropDown() {
+        return mainMenuAboutCompanyDropDown;
+    }
+
+    public WebElement getMainMenuOurTeam() {
+        return mainMenuOurTeam;
+    }
 
     //Search ELEMENTS
     public WebElement getIconSearch() {
@@ -186,5 +263,19 @@ public class MainPage {
         return iconVkontakte;
     }
 
+    private void waitInvisibleElementsInShopDropDown(WebElement webElement){
+        waitInvisibleElementInMainMenu(getMainMenuShopDropDown());
+        if (webElement.isDisplayed() == false){
+            new Actions(driver).moveToElement(getMainMenuShopDropDown()).perform();
+            new WebDriverWait(driver, 30).until(ExpectedConditions.visibilityOf(webElement));
+        }
+    }
+
+    private void waitInvisibleElementInMainMenu(WebElement webElement){
+        if(webElement.isDisplayed() == false) {
+            getMainMenuDropDown().click();
+            new WebDriverWait(driver, 30).until(ExpectedConditions.visibilityOf(webElement));
+        }
+    }
 
 }
