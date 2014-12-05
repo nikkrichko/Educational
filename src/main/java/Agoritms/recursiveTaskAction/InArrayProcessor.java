@@ -10,9 +10,10 @@ public class InArrayProcessor<T> extends RecursiveAction {
     private IAction<T> iAction;
     private T[] classInputArray;
     private int[] lengthArray;
+    
+    private int from, to;
 
     public InArrayProcessor(T[] classInputArray, IAction<T> iAction) {
-
         this.iAction = iAction;
         if (classInputArray != null)
         this.classInputArray = classInputArray;
@@ -21,35 +22,30 @@ public class InArrayProcessor<T> extends RecursiveAction {
             lengthArray[i]=i;
         }
     }
-
+    
     public InArrayProcessor(T[] classInputArray, int[] littleArray, IAction<T> iAction) {
         this.classInputArray = classInputArray;
         this.iAction = iAction;
         this.lengthArray = littleArray;
     }
 
-
-
-
+    private InArrayProcessor(T[] classInputArray, int[] littleArray, IAction<T> iAction, int from, int to) {
+        this(classInputArray, iAction, littleArray);
+        this.from = from
+        this.to = to;
+    }
 
     @Override
     protected void compute() {
         int midlle;
-        int[] array_left;
-        int[] array_right;
-        if (lengthArray.length == 1){
-
-            iAction.action(classInputArray, lengthArray[0]);
+        if (to - from == 1){
+            iAction.action(classInputArray, lengthArray[to - from]);
             return;
-
         }
+        int midlle = from + to / 2;
 
-        midlle = lengthArray.length / 2;
-        array_left = Arrays.copyOfRange(lengthArray, 0, midlle);
-        array_right = Arrays.copyOfRange(lengthArray, midlle, lengthArray.length);
-
-        InArrayProcessor<T> leftTask = new InArrayProcessor<>(classInputArray, array_left, iAction);
-        InArrayProcessor<T> rightTask = new InArrayProcessor<>(classInputArray, array_right, iAction);
+        InArrayProcessor<T> leftTask = new InArrayProcessor<>(classInputArray, lengthArray, iAction, from, middle);
+        InArrayProcessor<T> rightTask = new InArrayProcessor<>(classInputArray, lengthArray, iAction, from + middle, to);
         leftTask.fork();
         rightTask.fork();
         leftTask.join();
